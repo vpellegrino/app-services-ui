@@ -29,6 +29,11 @@
       "basePath": "/mas-local-fm/cos",
       "proxyTarget": "http://localhost:9002",
       "fallbackBasePath": "/beta/apps/cos-ui-build"
+    },
+    "smartevents": {
+      "basePath": "/mas-local-fm/smartevents",
+      "proxyTarget": "http://localhost:9006",
+      "fallbackBasePath": "/beta/apps/smartevents-ui-build"
     }
   },
   "config": [
@@ -73,7 +78,8 @@
               "module": "./config"
             }
           }
-        }
+        },
+        "smartevents": {}
       }
     },
     {
@@ -116,7 +122,8 @@
               "module": "./config"
             }
           }
-        }
+        },
+        "smartevents": {}
       }
     },
     {
@@ -159,7 +166,8 @@
               "module": "./config"
             }
           }
-        }
+        },
+        "smartevents": {}
       }
     }
   ]

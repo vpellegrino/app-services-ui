@@ -16,6 +16,7 @@ import { BasenameContext } from '@rhoas/app-services-ui-shared';
 import { AppServicesLoading } from '@rhoas/app-services-ui-components';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@patternfly/react-core';
+import SmartEventsPage from "@app/pages/SmartEventsPage/SmartEventsPage";
 
 const QuickStartLoaderFederated = React.lazy(() => import('@app/pages/Resources/QuickStartLoaderFederated'));
 
@@ -73,6 +74,15 @@ const appRoutes: AppRouteConfig<any>[] = [
     title: 'Streams for Apache Kafka | Red Hat OpenShift Application Services',
     basename: '/streams/kafkas',
     devPreview: false,
+  },
+  {
+    component: SmartEventsPage,
+    exact: true,
+    label: 'SmartEvents',
+    path: '/smartevents',
+    title: 'SmartEvents | Red Hat OpenShift Application Services',
+    basename: `${getBaseName(window.location.pathname)}/smartevents`,
+    devPreview: true,
   },
   {
     component: ServiceRegistryPage,
